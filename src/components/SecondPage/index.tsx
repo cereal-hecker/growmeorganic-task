@@ -1,15 +1,10 @@
-import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
-
+import APIComponent from "./APIComponent";
+import CollapseComponent from "./CollapseComponent";
 export default function SecondPage() {
-  const navigate = useNavigate();
-  useEffect(() => {
-    const userDetails = localStorage.getItem('userDetails');
-    console.log(userDetails)
-  })
   return (
-    <div className="secondpage">
-      <div>dd</div>
+    <div>
+      <APIComponent />
+      <CollapseComponent />
     </div>
   );
 }
